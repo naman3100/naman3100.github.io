@@ -1,0 +1,250 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+
+
+#top
+{
+    font-family: 'ZCOOL XiaoWei', serif;
+    color:blue;
+}
+#top:hover{
+  color:red;
+}
+
+#special
+{
+    color: red;
+    background-color:rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+#special:hover{
+    color:blue;
+}
+
+#link{
+  color:red;
+}
+#link:hover
+{
+    color:blue;
+}
+
+#des{
+    font-family: 'Black Ops One', cursive;
+    padding-top: 5rem;
+    font-size: 3rem;
+    animation-name: word;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+#ser
+{
+    font-family: 'Black Ops One', cursive;
+    padding-top: 5rem;
+    font-size: 2rem;
+    margin-top:0;
+}
+
+@keyframes word{
+    0%
+    {
+        color:red;
+        opacity:1;
+    }
+    25%
+    {
+        color:blue;
+        opacity:0;
+    }
+    50%
+    {
+        color:blue;
+        opacity:1;
+    }
+    75%
+    {
+        color:red;
+        opacity: 0;
+    }
+    100%
+    {
+        color:red;
+        opacity: 1;
+    }
+}
+
+/* Samrat */
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}  
+
+
+/* End */
+
+
+/* beside moblie*/
+
+
+
+#containe {
+    color:#999;
+    text-transform: uppercase;
+    font-size:36px;
+    font-weight:bold;
+    padding-top:50px;
+    position: relative;;
+    width:100%;
+    /* bottom:45%; */
+    display:block;
+  }
+  
+  #flip {
+    height:50px;
+    overflow:hidden;
+  }
+  
+  #flip > div > div {
+    color:#fff;
+    padding:4px 12px;
+    height:45px;
+    margin-bottom:45px;
+    display:inline-block;
+  }
+  
+  #flip div:first-child {
+    animation: show 5s linear infinite;
+  }
+  
+  #flip div div {
+    background:#42c58a;
+  }
+  #flip div:first-child div {
+    background:#4ec7f3;
+  }
+  #flip div:last-child div {
+    background:#DC143C;
+  }
+  
+  @keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+  }
+  
+
+  /* End beside mobile */
+
+
+
+  /* flipping */
+
+  .flip-container {
+    -webkit-perspective: 1000;
+   -moz-perspective: 1000;
+   -ms-perspective: 1000;
+   perspective: 1000px;
+ }
+   /* flip the pane when hovered */
+   .flip-container:hover .flipper, .flip-container.hover .flipper {
+     transform: rotateY(180deg);
+   }
+ 
+ .flip-container, .front, .back {
+   width: 30rem;
+   height: 40rem;
+ }
+ 
+ /* flip speed goes here */
+ .flipper {
+   transition: 0.6s;
+   transform-style: preserve-3d;
+ 
+   position: relative;
+ }
+ 
+ /* hide back of pane during swap */
+ .front, .back {
+   backface-visibility: hidden;
+ 
+   position: absolute;
+   top: 0;
+   left: 0;
+ }
+ 
+ /* front pane, placed above back */
+ .front {
+   z-index: 2;
+   /* for firefox 31 */
+   transform: rotateY(0deg);
+ }
+ 
+ /* back, initially hidden pane */
+ .back {
+   transform: rotateY(180deg);
+ }
+ 
+ #image
+ {
+   width:30rem;
+   height: 40rem;
+ }
+
+ #cau
+ {
+   width:50rem;
+   height: 30rem;
+ }
+
+  /* END OF FLIPPING */
