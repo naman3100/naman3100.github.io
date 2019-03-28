@@ -1,7 +1,48 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 @import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+body{
+  background: #fc4a1a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+
+.neon {
+  display:flex;
+  justify-content: center;
+  font-size:5em;
+	color: rgba(255, 255, 255, 0);
+	text-shadow:
+		0 0 2px #ffffff,
+		0 0 15px #C21807,
+		0 0 20px #C21807,
+		0 0 40px #C21807;
+}
+.para
+{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5em;
+}
+
+.a {
+  display:flex;
+  justify-content: start;
+  font-size:4em;
+	color: rgba(255, 255, 255, 0);
+	text-shadow:
+		0 0 2px #ffffff,
+		0 0 15px yellow,
+		0 0 20px yellow,
+		0 0 40px yellow;
+}
 
 #top
 {
@@ -9,12 +50,41 @@
     color:blue;
 }
 #top:hover{
-  color:red;
+  color:#EA1C2C;
+}
+
+#td
+{
+  padding: 20px;
+  margin:10px;
+}
+#sc
+{
+  padding: 20px;
+  margin: 10px;
+}
+#fr
+{
+  padding:20px;
+  margin: 10px;
+}
+
+
+#img4
+{
+  border: 3px solid black;
+  border-radius: 20px;
+  padding:0px;
+}
+
+
+.scrolled{
+  background-color: 	#FFA07A;
 }
 
 #special
 {
-    color: red;
+    color: #EA1C2C;
     background-color:rgb(255, 255, 255);
     font-size: 20px;
 }
@@ -24,11 +94,13 @@
 }
 
 #link{
-  color:red;
+  color:#EA1C2C;
+  font-family: 'Nunito', sans-serif;
 }
 #link:hover
 {
     color:blue;
+    font-size: 1.05rem;
 }
 
 #des{
@@ -49,10 +121,11 @@
     margin-top:0;
 }
 
+
 @keyframes word{
     0%
     {
-        color:red;
+        color:#EA1C2C;
         opacity:1;
     }
     25%
@@ -67,66 +140,17 @@
     }
     75%
     {
-        color:red;
+        color:#EA1C2C;
         opacity: 0;
     }
     100%
     {
-        color:red;
+        color:#EA1C2C;
         opacity: 1;
     }
 }
 
-/* Samrat */
 
-svg {
-    display: block;
-    font: 10.5em 'Montserrat';
-    width: 960px;
-    height: 300px;
-    margin: 0 auto;
-}
-
-.text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
-}
-
-.text-copy:nth-child(1){
-	stroke: #4D163D;
-	animation-delay: -1;
-}
-
-.text-copy:nth-child(2){
-	stroke: #840037;
-	animation-delay: -2s;
-}
-
-.text-copy:nth-child(3){
-	stroke: #BD0034;
-	animation-delay: -3s;
-}
-
-.text-copy:nth-child(4){
-	stroke: #BD0034;
-	animation-delay: -4s;
-}
-
-.text-copy:nth-child(5){
-	stroke: #FDB731;
-	animation-delay: -5s;
-}
-
-@keyframes stroke-offset{
-	100% {stroke-dashoffset: -35%;}
-}  
-
-
-/* End */
 
 
 /* beside moblie*/
@@ -243,8 +267,144 @@ svg {
 
  #cau
  {
-   width:50rem;
+  
    height: 30rem;
  }
 
+ #mobile
+ {
+   width: 27rem;
+   height: 43rem;
+ }
   /* END OF FLIPPING */
+
+  /* rotating box */
+
+
+  .page{
+    height:0;
+    margin: 0;}
+  .cube {
+    position: relative;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    transform-style: preserve-3d;
+  animation: spin 10s infinite alternate;}
+  @keyframes spin{0%{transform: rotateX(90deg) rotateY(360deg) translateZ(0px);}}
+  .side{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    opacity: 0.95;}
+  
+  .one{ transform:rotateX(90deg) translateZ(100px); background-color: red;}
+  img{width: 200px;height: 200px;}
+  .two{ transform: translateZ(100px);background-color: yellow;}
+  .three{ transform:rotateY(90deg) translateZ(100px); background-color: green;}
+  .four{ transform:rotateY(180deg) translateZ(100px); background-color: blue;}
+  .five{ transform:rotateY(-90deg) translateZ(100px); background-color: lightblue;}
+  .six{ transform:rotateX(-90deg) translateZ(100px); background-color: Chartreuse;}
+
+  /* end rotating box */
+
+
+  /* beside rotiing text */
+
+  svg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    }
+  text {
+    stroke:#DC143C;
+    stroke-width: 2;
+    stroke-dasharray: 20;
+    font: 10em/1 'Russo One', Impact;
+    }
+  
+  .g-lines path {
+    stroke:#DC143C;
+    stroke-width: 10;
+  }
+
+.blinks
+{
+  color:#DC143C;
+}
+
+#warrenimg{
+  border-radius: 50%;
+  border :whitesmoke solid 5px;
+}
+
+#warr
+{
+  font-size: 2rem;
+}
+
+
+.golden {
+	background: -webkit-linear-gradient(top,  #f9d400 15%,#f89b00 35%,#f9d400 70%); /* Chrome10+,Safari5.1+ */
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+
+
+#about
+{
+  margin-top:60px;
+  margin-bottom: 80px;
+  padding:5px;
+}
+
+
+
+
+
+
+
+
+
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 450px;
+  height: 281px;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+}
+
+
+.kd
+{
+  font-size: 1.5rem;
+  border-bottom: 1px solid black;
+}
