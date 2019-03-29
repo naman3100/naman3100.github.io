@@ -4,27 +4,99 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+@import url('https://fonts.googleapis.com/css?family=Spinnaker');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
 
 body{
-  background: #fc4a1a;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #CC95C0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 }
 
+.contentsam {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 20vh;
+	/* background: #000 url(https://images.unsplash.com/22/brick-wall.JPG) center center;
+	background-size: cover; */
+}
+
+.titlesam {
+	font: 6rem 'Poiret One', cursive;
+	color: #fff;
+	text-shadow: 
+		0 0 10px #fff, 
+		0 0 30px #58ade0, 
+		0 0 50px #58ade0, 
+		0 0 70px #fff,
+		0 0 90px #fff;
+}
 
 
+.embedded {
+  display:flex;
+  justify-content: start;
+  font-size:4em;
+	color: #000000;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.20);
+}
+
+.embossed {
+  display:flex;
+  justify-content: start;
+  font-size:4em;
+  font-family: 'Spinnaker', sans-serif;
+	color: #603624;
+	text-shadow:
+		-1px -1px 1px rgba(255, 255, 255, 0.30),
+		1px 1px 1px rgba(0, 0, 0, 0.20);
+}
+
+.gradient {
+  display:flex;
+  justify-content: center;
+  font-size:1em;
+	background: -webkit-linear-gradient(top,  #444444 0%,#a2a2a2 100%); /* Chrome10+,Safari5.1+ */
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+
+.caumt
+{
+  margin-top:3.5em;
+}
+
+.ad
+{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
+}
+
+.embossed:hover
+{
+  text-decoration-line: underline;
+}
+.ba{
+  display: flex;
+  justify-content: space-around;
+}
 
 .neon {
   display:flex;
   justify-content: center;
   font-size:5em;
+  font-family: 'Bungee Inline', cursive;
 	color: rgba(255, 255, 255, 0);
 	text-shadow:
 		0 0 2px #ffffff,
-		0 0 15px #C21807,
-		0 0 20px #C21807,
-		0 0 40px #C21807;
+		0 0 15px #58ade0,
+		0 0 20px #58ade0,
+		0 0 40px #fff;
 }
 .para
 {
@@ -42,6 +114,30 @@ background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, F
 		0 0 15px yellow,
 		0 0 20px yellow,
 		0 0 40px yellow;
+}
+.k
+{
+  font-family: 'ZCOOL XiaoWei', serif;
+  display:flex;
+  justify-content: center;
+  font-size:5em;
+	color: rgba(255, 255, 255, 0);
+}
+.sam {
+ 
+	text-shadow:
+		0 0 2px #ffffff,
+		0 0 15px red,
+		0 0 20px red,
+		0 0 40px red;
+}
+.in {
+  
+	text-shadow:
+		0 0 2px #ffffff,
+		0 0 15px blue,
+		0 0 20px blue,
+		0 0 40px blue;
 }
 
 #top
@@ -79,7 +175,7 @@ background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, F
 
 
 .scrolled{
-  background-color: 	#FFA07A;
+  background-color: lightsteelblue;
 }
 
 #special
@@ -226,13 +322,13 @@ background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, F
    }
  
  .flip-container, .front, .back {
-   width: 30rem;
-   height: 40rem;
+   width: 25rem;
+   height: 35rem;
  }
  
  /* flip speed goes here */
  .flipper {
-   transition: 0.6s;
+   transition: 0.7s;
    transform-style: preserve-3d;
  
    position: relative;
@@ -261,8 +357,8 @@ background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, F
  
  #image
  {
-   width:30rem;
-   height: 40rem;
+   width:25rem;
+   height: 35rem;
  }
 
  #cau
